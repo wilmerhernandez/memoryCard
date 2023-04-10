@@ -109,7 +109,7 @@ function App() {
               severity="success"
               sx={{ width: "50%", position: "fixed", color: "#fff" }}
             >
-              En hora buena {localStorage.getItem("name")} has acertadp
+              En hora buena {localStorage.getItem("name")} has acertado
             </Alert>
           </Stack>
         ) : null}
