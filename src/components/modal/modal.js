@@ -20,7 +20,6 @@ const style = {
 export default function BasicModal() {
   const [open, setOpen] = React.useState(true);
   const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
   const handleName = () => {
     localStorage.setItem("name", document.getElementById("name").value);
     setOpen(false);
@@ -30,7 +29,6 @@ export default function BasicModal() {
       <Button onClick={handleOpen}>Open modal</Button>
       <Modal
         open={open}
-        onClose={handleClose}
         aria-labelledby="Modal"
         aria-describedby="modal set name"
       >
